@@ -61,7 +61,8 @@
     "test": "npx karma start .config/karma.conf.js --single-run",
     "test:dots": "npx karma start .config/karma.conf.js --single-run --reporters dots",
     "test:quick": "npx karma start .config/karma.quick.js",
-    "server": "npx http-server ./ -d"
+    "server": "npx http-server ./ -d",
+    "test:quick": "node -r esm ./spec/run.js || true"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -80,6 +81,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "esm": "^3.0.84",
     "http-server": "^0.11.1",
+    "jasmine": "^3.3.0",
     "jasmine-core": "^3.3.0",
     "karma": "^3.1.1",
     "karma-chrome-launcher": "^2.2.0",
@@ -93,7 +95,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-uglify": "^6.0.0",
     "rollup-plugin-uglify-es": "0.0.1",
-    "svgdom": "latest"
+    "svgdom": "github:svgdotjs/svgdom"
   },
   "dependencies": {},
   "optionalDependencies": {}
