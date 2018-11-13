@@ -62,7 +62,8 @@
     "test:dots": "npx karma start .config/karma.conf.js --single-run --reporters dots",
     "test:quick": "npx karma start .config/karma.quick.js",
     "server": "npx http-server ./ -d",
-    "test:quick": "node -r esm ./spec/run.js || true"
+    "test:svgdom": "node -r esm ./spec/run.js || true",
+    "test:es6": "npx karma start .config/karma.es6.js --single-run"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
