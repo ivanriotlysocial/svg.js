@@ -63,7 +63,8 @@
     "test:quick": "npx karma start .config/karma.quick.js",
     "server": "npx http-server ./ -d",
     "test:svgdom": "node -r esm ./spec/run.js || true",
-    "test:es6": "npx karma start .config/karma.es6.js --single-run"
+    "test:es6": "npx karma start .config/karma.es6.js --single-run",
+    "build:tests": "npx rollup -c rollup.tests.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -93,6 +94,7 @@
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-filesize": "^5.0.1",
+    "rollup-plugin-multi-entry": "^2.0.2",
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-uglify": "^6.0.0",
     "rollup-plugin-uglify-es": "0.0.1",
